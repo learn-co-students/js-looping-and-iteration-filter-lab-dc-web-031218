@@ -19,9 +19,9 @@ function fuzzyMatch(array, string){
 
 function matchName(array, string){
   let arrayToRet = [];
-  for(const key in array){
-    if (array[key].name === string){
-      arrayToRet.push(array[key]);
+  for(const element of array){
+    if (element.name === string){
+      arrayToRet.push(element);
     }
   }
   return arrayToRet;
